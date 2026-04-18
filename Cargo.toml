@@ -1,0 +1,22 @@
+[package]
+name = "apertur-sdk"
+version = "0.1.5"
+edition = "2021"
+rust-version = "1.70"
+description = "Rust SDK for the Apertur API"
+license = "MIT"
+repository = "https://github.com/Apertur-dev/apertur-rust"
+keywords = ["apertur", "sdk", "upload", "image", "api"]
+categories = ["api-bindings"]
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "multipart", "blocking"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hmac = "0.12"
+sha2 = "0.10"
+rsa = { version = "0.9", features = ["sha2"] }
+aes-gcm = "0.10"
+base64 = "0.22"
+rand = "0.8"
+thiserror = "2"
